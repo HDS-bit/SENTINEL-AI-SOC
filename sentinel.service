@@ -1,0 +1,19 @@
+[Unit]
+Description=CSTD SENTINEL AI SOC Enterprise Server
+Documentation=https://github.com/sentinel/soc
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/var/www/sentinel-app
+ExecStart=/usr/bin/node server/server.js
+Restart=on-failure
+RestartSec=5s
+Environment=NODE_ENV=production
+Environment=PORT=5000
+Environment=HOST=0.0.0.0
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
