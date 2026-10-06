@@ -13,11 +13,28 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:5000',
         changeOrigin: true,
-        secure: false
+        secure: false,
+        configure: (proxy, _options) => {
+          proxy.on('error', (_err, _req, res) => {
+            // Graceful response when backend is offline or starting
+            if (res.writeHead && !res.headersSent) {
+              res.writeHead(503, { 'Content-Type': 'application/json' });
+              res.end(JSON.stringify({ 
+                error: 'Backend API server offline (standalone client mode active)',
+                online: false 
+              }));
+            }
+          });
+        }
       },
       '/ws': {
         target: 'ws://localhost:5000',
-        ws: true
+        ws: true,
+        configure: (proxy, _options) => {
+          proxy.on('error', (_err, _req, _socket) => {
+            // Silently handle WS proxy error when backend is offline
+          });
+        }
       }
     }
   },
@@ -28,11 +45,27 @@ export default defineConfig({
       '/api': {
         target: 'http://localhost:5000',
         changeOrigin: true,
-        secure: false
+        secure: false,
+        configure: (proxy, _options) => {
+          proxy.on('error', (_err, _req, res) => {
+            if (res.writeHead && !res.headersSent) {
+              res.writeHead(503, { 'Content-Type': 'application/json' });
+              res.end(JSON.stringify({ 
+                error: 'Backend API server offline',
+                online: false 
+              }));
+            }
+          });
+        }
       },
       '/ws': {
         target: 'ws://localhost:5000',
-        ws: true
+        ws: true,
+        configure: (proxy, _options) => {
+          proxy.on('error', (_err, _req, _socket) => {
+            // Silently handle WS proxy error
+          });
+        }
       }
     }
   }
