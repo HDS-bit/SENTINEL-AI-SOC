@@ -34,6 +34,7 @@ export default function App() {
   const [threatLevel, setThreatLevel] = useState('NORMAL');
   const [emergencyActive, setEmergencyActive] = useState(false);
   const [selectedModelType, setSelectedModelType] = useState('RF');
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Real Server Status & Hardware Telemetry
   const [serverStatus, setServerStatus] = useState({ online: false, latency: null });
@@ -342,17 +343,24 @@ export default function App() {
         onLogout={handleLogout}
         serverStatus={serverStatus}
         systemMetrics={systemMetrics}
+        mobileMenuOpen={mobileMenuOpen}
+        onToggleMobileMenu={() => setMobileMenuOpen(prev => !prev)}
       />
 
       <div className="flex-1 flex flex-col lg:flex-row min-h-[calc(100vh-65px)]">
         <Sidebar
           activeTab={activeTab}
-          setActiveTab={setActiveTab}
+          setActiveTab={(tab) => {
+            setActiveTab(tab);
+            setMobileMenuOpen(false);
+          }}
           blockedCount={blockedQueries.length}
           incidentCount={incidentLogs.length}
+          mobileMenuOpen={mobileMenuOpen}
+          onCloseMobileMenu={() => setMobileMenuOpen(false)}
         />
 
-        <main className="flex-1 p-4 lg:p-6 overflow-y-auto max-w-7xl mx-auto w-full">
+        <main className="flex-1 p-3 sm:p-4 lg:p-6 overflow-y-auto max-w-7xl mx-auto w-full">
           {activeTab === 'dashboard' && (
             <DashboardView
               packets={packets}

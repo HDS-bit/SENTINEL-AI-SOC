@@ -1,6 +1,7 @@
 /**
  * SENTINEL AI - WebSocket Client Service
  * Real-time event streaming for packets, attacks, alerts, and server metrics.
+ * Production-hardened for HTTPS/WSS, real servers, mobile, and LAN edge runtime.
  */
 
 class SocketService {
@@ -10,24 +11,32 @@ class SocketService {
     this.isConnected = false;
     this.reconnectTimer = null;
     this.reconnectAttempts = 0;
+    this.isManualClosed = false;
   }
 
   connect() {
+    if (typeof window === 'undefined') return;
     if (this.ws && (this.ws.readyState === WebSocket.OPEN || this.ws.readyState === WebSocket.CONNECTING)) {
       return;
     }
 
     try {
-      const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+      const isHttps = window.location.protocol === 'https:';
+      const wsProtocol = isHttps ? 'wss:' : 'ws:';
       
+      // Compute intelligent host target:
+      // 1. If explicit env variable is provided
       let host = window.location.host;
-      // If we are running on any dev/preview port other than 5000, route WS to backend on 5000
-      if (window.location.port !== '5000') {
-        const hostname = window.location.hostname || 'localhost';
+      
+      const hostname = window.location.hostname || 'localhost';
+      const isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1';
+      
+      // In local dev without proxy, default to port 5000
+      if (isLocalhost && (window.location.port === '3000' || window.location.port === '5173')) {
         host = `${hostname}:5000`;
       }
 
-      const wsUrl = `${protocol}//${host}/ws`;
+      const wsUrl = `${wsProtocol}//${host}/ws`;
       this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
@@ -45,22 +54,24 @@ class SocketService {
             this.emit('*', data);
           }
         } catch (err) {
-          console.warn('⚠️ Malformed WS message:', event.data);
+          // Ignore malformed WS payload
         }
       };
 
       this.ws.onclose = () => {
         this.isConnected = false;
         this.emit('connection_change', { isConnected: false });
-        this.scheduleReconnect();
+        if (!this.isManualClosed) {
+          this.scheduleReconnect();
+        }
       };
 
       this.ws.onerror = () => {
         this.isConnected = false;
         this.emit('connection_change', { isConnected: false });
+        // Error will trigger onclose which schedules reconnect
       };
     } catch (err) {
-      console.warn('⚠️ WebSocket initialization error:', err.message);
       this.scheduleReconnect();
     }
   }
@@ -68,7 +79,8 @@ class SocketService {
   scheduleReconnect() {
     if (this.reconnectTimer) clearTimeout(this.reconnectTimer);
     this.reconnectAttempts++;
-    const delay = Math.min(10000, 1500 * Math.pow(1.5, Math.min(this.reconnectAttempts, 4)));
+    // Exponential backoff capped at 8 seconds to prevent console flood
+    const delay = Math.min(8000, 2000 * Math.pow(1.3, Math.min(this.reconnectAttempts, 4)));
     this.reconnectTimer = setTimeout(() => {
       this.connect();
     }, delay);
@@ -112,6 +124,7 @@ class SocketService {
   }
 
   disconnect() {
+    this.isManualClosed = true;
     if (this.reconnectTimer) clearTimeout(this.reconnectTimer);
     if (this.ws) {
       this.ws.close();

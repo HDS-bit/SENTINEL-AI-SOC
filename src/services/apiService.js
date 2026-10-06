@@ -1,17 +1,10 @@
 /**
  * SENTINEL AI - Central API Client Service
- * Communicates with the real Node.js Backend API & gracefully falls back to offline mode.
+ * Communicates with the real Node.js Backend API & gracefully falls back to offline standalone mode.
  */
 
-// Detect API base URL: auto-probes local backend at port 5000 if running on dev/preview server
+// Detect API base URL: defaults to relative '' for same-origin production & proxy, or custom VITE_API_URL
 let dynamicApiBase = import.meta.env.VITE_API_URL || '';
-
-// If served on a dev/preview port (not 5000), default fallback to localhost:5000
-if (!dynamicApiBase && typeof window !== 'undefined') {
-  if (window.location.port !== '5000') {
-    dynamicApiBase = `http://${window.location.hostname || 'localhost'}:5000`;
-  }
-}
 
 const TOKEN_KEY = 'SENTINEL_JWT_TOKEN';
 
@@ -25,10 +18,11 @@ export const apiService = {
   },
 
   getToken() {
-    return localStorage.getItem(TOKEN_KEY) || '';
+    return typeof localStorage !== 'undefined' ? localStorage.getItem(TOKEN_KEY) || '' : '';
   },
 
   setToken(token) {
+    if (typeof localStorage === 'undefined') return;
     if (token) localStorage.setItem(TOKEN_KEY, token);
     else localStorage.removeItem(TOKEN_KEY);
   },
@@ -67,38 +61,49 @@ export const apiService = {
     }
   },
 
-  // Health & Server Telemetry with multi-target fallback
+  // Health & Server Telemetry with intelligent multi-target fallback
   async checkHealth() {
-    // 1. Try currently configured dynamicApiBase
     const candidates = [];
     if (dynamicApiBase) candidates.push(dynamicApiBase);
-    candidates.push(''); // Relative (for same-origin or proxy)
+    candidates.push(''); // Try relative first (same-origin / reverse proxy / express static)
+
     if (typeof window !== 'undefined') {
-      const explicitHost = `http://${window.location.hostname || 'localhost'}:5000`;
-      if (!candidates.includes(explicitHost)) candidates.push(explicitHost);
-      const fallbackLocal = 'http://localhost:5000';
-      if (!candidates.includes(fallbackLocal)) candidates.push(fallbackLocal);
-      const fallback127 = 'http://127.0.0.1:5000';
-      if (!candidates.includes(fallback127)) candidates.push(fallback127);
+      const hostname = window.location.hostname || 'localhost';
+      const isLocalhost = hostname === 'localhost' || hostname === '127.0.0.1';
+      
+      // In local dev server, try backend on port 5000
+      if (isLocalhost && window.location.port !== '5000') {
+        const local5000 = `http://${hostname}:5000`;
+        if (!candidates.includes(local5000)) candidates.push(local5000);
+      }
     }
 
     for (const base of candidates) {
       try {
         const start = Date.now();
         const targetUrl = `${base}/api/health`;
-        const res = await fetch(targetUrl, { method: 'GET', headers: { 'Content-Type': 'application/json' } });
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 2500);
+
+        const res = await fetch(targetUrl, { 
+          method: 'GET', 
+          headers: { 'Content-Type': 'application/json' },
+          signal: controller.signal
+        });
+        clearTimeout(timeoutId);
+
         if (res.ok) {
           const data = await res.json();
           const latency = Date.now() - start;
-          dynamicApiBase = base; // Lock in the discovered working API base
+          dynamicApiBase = base; // Lock in the discovered working base
           return { online: true, latency, apiBase: base, ...data };
         }
       } catch (e) {
-        // Try next candidate
+        // Fall through to next candidate
       }
     }
 
-    return { online: false, error: 'Server unreachable across local and proxy endpoints' };
+    return { online: false, error: 'Standalone Edge Mode (Backend offline or local simulation)' };
   },
 
   async getSystemInfo() {
