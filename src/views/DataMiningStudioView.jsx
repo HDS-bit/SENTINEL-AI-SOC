@@ -37,6 +37,7 @@ import {
   parseCSVDataset 
 } from '../data-mining/datasetGenerator';
 import { threatAudio } from '../components/ThreatAudio';
+import PipelineFlowchart from '../components/PipelineFlowchart';
 
 export default function DataMiningStudioView({ onNavigateTab }) {
   const [datasetSize, setDatasetSize] = useState(300);
@@ -47,7 +48,7 @@ export default function DataMiningStudioView({ onNavigateTab }) {
   const [metrics, setMetrics] = useState(null);
   const [clusterData, setClusterData] = useState(null);
   const [rocData, setRocData] = useState(generateROCCurve());
-  const [activeSubTab, setActiveSubTab] = useState('BENCHMARK'); // 'BENCHMARK' | 'ROC_ELBOW' | 'CLUSTERS' | 'CONFUSION'
+  const [activeSubTab, setActiveSubTab] = useState('PIPELINE'); // 'PIPELINE' | 'BENCHMARK' | 'ROC_ELBOW' | 'CLUSTERS' | 'CONFUSION'
   const [customDataVectors, setCustomDataVectors] = useState(null);
   const [customFileName, setCustomFileName] = useState(null);
 
@@ -236,6 +237,20 @@ export default function DataMiningStudioView({ onNavigateTab }) {
       {/* Navigation Sub-Tabs */}
       <div className="flex items-center gap-2 border-b border-slate-800 pb-2 font-mono text-xs overflow-x-auto">
         <button
+          onClick={() => setActiveSubTab('PIPELINE')}
+          className={`px-3 py-1.5 rounded-lg font-bold transition-all flex items-center gap-1.5 ${
+            activeSubTab === 'PIPELINE' 
+              ? 'bg-gradient-to-r from-cyan-500/20 to-purple-500/20 text-cyan-300 border border-cyan-400 shadow-[0_0_12px_rgba(0,242,254,0.2)]' 
+              : 'text-slate-400 hover:text-slate-200 hover:bg-slate-900/60'
+          }`}
+        >
+          <Network className="w-3.5 h-3.5 text-cyan-400" />
+          <span>7-Stage Pipeline Flowchart</span>
+          <span className="text-[9px] px-1.5 py-0.2 rounded bg-cyan-500/20 text-cyan-300 font-bold border border-cyan-500/30">
+            PROTOTYPE
+          </span>
+        </button>
+        <button
           onClick={() => setActiveSubTab('BENCHMARK')}
           className={`px-3 py-1.5 rounded-lg font-bold transition-colors ${
             activeSubTab === 'BENCHMARK' ? 'bg-cyan-500/20 text-cyan-300 border border-cyan-500/40' : 'text-slate-400 hover:text-slate-200'
@@ -268,6 +283,11 @@ export default function DataMiningStudioView({ onNavigateTab }) {
           Confusion Matrix Heatmap
         </button>
       </div>
+
+      {/* SubTab 0: Interactive 7-Stage Pipeline Flowchart */}
+      {activeSubTab === 'PIPELINE' && (
+        <PipelineFlowchart onNavigateTab={onNavigateTab} />
+      )}
 
       {/* SubTab 1: Model Benchmark Arena */}
       {activeSubTab === 'BENCHMARK' && (

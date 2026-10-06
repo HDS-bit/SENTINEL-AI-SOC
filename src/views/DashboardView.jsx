@@ -19,7 +19,9 @@ import {
   Server,
   HardDrive,
   Wifi,
-  Zap
+  Zap,
+  Network,
+  ArrowRight
 } from 'lucide-react';
 import { threatAudio } from '../components/ThreatAudio';
 
@@ -81,6 +83,13 @@ export default function DashboardView({
 
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
           <button
+            onClick={() => onNavigateTab('data-mining')}
+            className="flex-1 md:flex-none px-3.5 py-2 rounded-xl text-xs font-mono font-semibold bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/40 flex items-center justify-center gap-1.5 transition-all shadow-[0_0_10px_rgba(168,85,247,0.15)]"
+          >
+            <Network className="w-3.5 h-3.5 text-purple-400" />
+            <span>ML Pipeline Flowchart</span>
+          </button>
+          <button
             onClick={() => onNavigateTab('data-safety')}
             className="flex-1 md:flex-none px-3.5 py-2 rounded-xl text-xs font-mono font-semibold bg-emerald-500/20 hover:bg-emerald-500/30 text-emerald-300 border border-emerald-500/40 flex items-center justify-center gap-1.5 transition-all"
           >
@@ -100,6 +109,51 @@ export default function DashboardView({
           >
             <Database className="w-3.5 h-3.5" />
             <span>DB Sentinel</span>
+          </button>
+        </div>
+      </div>
+
+      {/* 7-Stage ML Pipeline Architecture Live Status Strip */}
+      <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-950/80 border border-purple-500/30 flex flex-col md:flex-row items-start md:items-center justify-between gap-4 font-mono text-xs">
+        <div className="flex items-center gap-3">
+          <div className="w-10 h-10 rounded-xl bg-purple-500/20 border border-purple-500/40 flex items-center justify-center text-purple-400 shrink-0">
+            <Network className="w-5 h-5 animate-pulse" />
+          </div>
+          <div>
+            <div className="flex items-center gap-2">
+              <span className="font-bold text-white uppercase tracking-wider">
+                7-STAGE ML PIPELINE STATUS
+              </span>
+              <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-purple-500/20 text-purple-300 border border-purple-500/40">
+                END-TO-END ACTIVE
+              </span>
+            </div>
+            <p className="text-[11px] text-slate-400 font-sans mt-0.5">
+              Dataset → Preprocessing → Feature Extraction → Model Training → Evaluation → Prediction → Dashboard
+            </p>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-2 w-full md:w-auto justify-between md:justify-end">
+          <div className="hidden xl:flex items-center gap-1.5 text-[11px] text-slate-400">
+            <span className="text-cyan-300 font-bold">CIC-IDS</span>
+            <ArrowRight className="w-3 h-3 text-slate-600" />
+            <span className="text-blue-300 font-bold">Cleaned</span>
+            <ArrowRight className="w-3 h-3 text-slate-600" />
+            <span className="text-purple-300 font-bold">10-D Vector</span>
+            <ArrowRight className="w-3 h-3 text-slate-600" />
+            <span className="text-amber-300 font-bold">Random Forest</span>
+            <ArrowRight className="w-3 h-3 text-slate-600" />
+            <span className="text-emerald-300 font-bold">98.8% Acc</span>
+            <ArrowRight className="w-3 h-3 text-slate-600" />
+            <span className="text-rose-300 font-bold">1.8ms Inf</span>
+          </div>
+
+          <button
+            onClick={() => onNavigateTab('data-mining')}
+            className="px-3 py-1.5 rounded-xl bg-purple-500 hover:bg-purple-400 text-slate-950 font-bold text-xs flex items-center gap-1.5 transition-colors shadow-md"
+          >
+            <span>Interactive Studio →</span>
           </button>
         </div>
       </div>

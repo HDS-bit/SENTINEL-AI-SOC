@@ -49,11 +49,11 @@ export default function Sidebar({ activeTab, setActiveTab, blockedCount = 0, inc
     },
     {
       id: 'data-mining',
-      name: 'Data Mining Studio',
+      name: 'ML Pipeline & Data Mining',
       icon: Binary,
-      badge: 'ALGORITHMS',
+      badge: '7-STAGE FLOWCHART',
       badgeColor: 'bg-purple-500/20 text-purple-300 border-purple-500/30',
-      description: 'Train models, ROC curves, K-Means & confusion matrix'
+      description: 'Dataset → Prep → Features → Train → Eval → Pred → Dashboard'
     },
     {
       id: 'file-manager',
