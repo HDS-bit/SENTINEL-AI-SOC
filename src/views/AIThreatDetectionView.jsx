@@ -34,6 +34,7 @@ export default function AIThreatDetectionView({
   onInjectAttack,
   onQuarantineIP,
   onCustomAnalyze,
+  onOpenMitrePlaybook,
   selectedModelType = 'RF',
   setSelectedModelType
 }) {
@@ -96,6 +97,16 @@ export default function AIThreatDetectionView({
 
         {/* Active Model Selector & Stream Toggle */}
         <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto">
+          {onOpenMitrePlaybook && (
+            <button
+              onClick={onOpenMitrePlaybook}
+              className="px-3.5 py-2 rounded-xl text-xs font-mono font-bold bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/50 flex items-center gap-1.5 transition-all shadow-[0_0_12px_rgba(244,63,94,0.2)]"
+            >
+              <ShieldAlert className="w-3.5 h-3.5 text-rose-400" />
+              <span>MITRE T1110 Playbook</span>
+            </button>
+          )}
+
           {/* Active Model Switcher */}
           <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-800 font-mono text-xs text-slate-300">
             <BrainCircuit className="w-3.5 h-3.5 text-purple-400" />

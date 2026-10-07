@@ -25,6 +25,7 @@ import { INITIAL_USER } from './auth/authStore';
 import { threatAudio } from './components/ThreatAudio';
 import { apiService } from './services/apiService';
 import { socketService } from './services/socketService';
+import MitreT1110PlaybookModal from './components/MitreT1110PlaybookModal';
 
 export default function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -35,6 +36,7 @@ export default function App() {
   const [emergencyActive, setEmergencyActive] = useState(false);
   const [selectedModelType, setSelectedModelType] = useState('RF');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [showMitrePlaybook, setShowMitrePlaybook] = useState(false);
 
   // Real Server Status & Hardware Telemetry
   const [serverStatus, setServerStatus] = useState({ online: false, latency: null });
@@ -274,6 +276,10 @@ export default function App() {
     }
   };
 
+  const handleAddIncident = (incident) => {
+    setIncidentLogs(prev => [incident, ...prev.slice(0, 19)]);
+  };
+
   const handleUnbanIP = async (ip) => {
     try {
       if (serverStatus.online) {
@@ -369,6 +375,7 @@ export default function App() {
               onQuarantineIP={handleQuarantineIP}
               onNavigateTab={setActiveTab}
               onInjectAttack={handleInjectAttack}
+              onOpenMitrePlaybook={() => setShowMitrePlaybook(true)}
               systemMetrics={systemMetrics}
               serverStatus={serverStatus}
             />
@@ -384,6 +391,7 @@ export default function App() {
               onInjectAttack={handleInjectAttack}
               onQuarantineIP={handleQuarantineIP}
               onCustomAnalyze={handleCustomAnalyze}
+              onOpenMitrePlaybook={() => setShowMitrePlaybook(true)}
               selectedModelType={selectedModelType}
               setSelectedModelType={setSelectedModelType}
             />
@@ -431,11 +439,21 @@ export default function App() {
               quarantinedIPs={quarantinedIPs}
               onUnbanIP={handleUnbanIP}
               onAddQuarantineIP={handleQuarantineIP}
+              onOpenMitrePlaybook={() => setShowMitrePlaybook(true)}
               incidentLogs={incidentLogs}
             />
           )}
         </main>
       </div>
+
+      {/* MITRE ATT&CK T1110 Automated AI Incident Playbook Modal */}
+      <MitreT1110PlaybookModal
+        isOpen={showMitrePlaybook}
+        onClose={() => setShowMitrePlaybook(false)}
+        onQuarantineIP={handleQuarantineIP}
+        onAddIncident={handleAddIncident}
+        quarantinedIPs={quarantinedIPs}
+      />
     </div>
   );
 }

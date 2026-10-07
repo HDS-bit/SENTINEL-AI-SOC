@@ -21,6 +21,7 @@ export default function IncidentForensicsView({
   quarantinedIPs = [], 
   onUnbanIP, 
   onAddQuarantineIP,
+  onOpenMitrePlaybook,
   incidentLogs = []
 }) {
   const [newIP, setNewIP] = useState('');
@@ -85,14 +86,26 @@ export default function IncidentForensicsView({
           </div>
         </div>
 
-        {/* Download Report Button */}
-        <button
-          onClick={handleExportJSON}
-          className="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 flex items-center gap-1.5 shadow-[0_0_15px_rgba(255,184,0,0.3)] transition-all"
-        >
-          <Download className="w-4 h-4" />
-          <span>EXPORT FORENSICS REPORT (.JSON)</span>
-        </button>
+        {/* Action Buttons */}
+        <div className="flex flex-wrap items-center gap-2.5 w-full md:w-auto">
+          {onOpenMitrePlaybook && (
+            <button
+              onClick={onOpenMitrePlaybook}
+              className="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/50 flex items-center gap-1.5 transition-all shadow-[0_0_12px_rgba(244,63,94,0.2)]"
+            >
+              <ShieldAlert className="w-4 h-4 text-rose-400" />
+              <span>MITRE T1110 PLAYBOOK</span>
+            </button>
+          )}
+
+          <button
+            onClick={handleExportJSON}
+            className="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-gradient-to-r from-amber-500 to-yellow-400 hover:from-amber-400 hover:to-yellow-300 text-slate-950 flex items-center gap-1.5 shadow-[0_0_15px_rgba(255,184,0,0.3)] transition-all"
+          >
+            <Download className="w-4 h-4" />
+            <span>EXPORT FORENSICS REPORT (.JSON)</span>
+          </button>
+        </div>
       </div>
 
       {/* Main Grid: IP Quarantine & Forensic Incident Timeline */}

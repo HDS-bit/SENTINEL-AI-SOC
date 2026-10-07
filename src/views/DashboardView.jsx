@@ -32,6 +32,7 @@ export default function DashboardView({
   onQuarantineIP,
   onNavigateTab,
   onInjectAttack,
+  onOpenMitrePlaybook,
   systemMetrics,
   serverStatus
 }) {
@@ -83,11 +84,18 @@ export default function DashboardView({
 
         <div className="flex flex-wrap items-center gap-2 w-full md:w-auto">
           <button
+            onClick={onOpenMitrePlaybook}
+            className="flex-1 md:flex-none px-3.5 py-2 rounded-xl text-xs font-mono font-bold bg-rose-500/20 hover:bg-rose-500/30 text-rose-300 border border-rose-500/50 flex items-center justify-center gap-1.5 transition-all shadow-[0_0_15px_rgba(244,63,94,0.25)]"
+          >
+            <ShieldAlert className="w-3.5 h-3.5 text-rose-400 animate-pulse" />
+            <span>MITRE T1110 Playbook</span>
+          </button>
+          <button
             onClick={() => onNavigateTab('data-mining')}
             className="flex-1 md:flex-none px-3.5 py-2 rounded-xl text-xs font-mono font-semibold bg-purple-500/20 hover:bg-purple-500/30 text-purple-300 border border-purple-500/40 flex items-center justify-center gap-1.5 transition-all shadow-[0_0_10px_rgba(168,85,247,0.15)]"
           >
             <Network className="w-3.5 h-3.5 text-purple-400" />
-            <span>ML Pipeline Flowchart</span>
+            <span>ML Pipeline</span>
           </button>
           <button
             onClick={() => onNavigateTab('data-safety')}
@@ -101,7 +109,7 @@ export default function DashboardView({
             className="flex-1 md:flex-none px-4 py-2 rounded-xl text-xs font-mono font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 flex items-center justify-center gap-1.5 shadow-[0_0_15px_rgba(0,242,254,0.3)] transition-all"
           >
             <Cpu className="w-3.5 h-3.5" />
-            <span>Launch AI Classifier</span>
+            <span>AI Classifier</span>
           </button>
           <button
             onClick={() => onNavigateTab('db-firewall')}
@@ -155,6 +163,62 @@ export default function DashboardView({
           >
             <span>Interactive Studio →</span>
           </button>
+        </div>
+      </div>
+
+      {/* MITRE ATT&CK T1110 Automated AI Incident Response Workflow Ribbon */}
+      <div className="p-4 rounded-2xl bg-gradient-to-r from-slate-950 via-rose-950/20 to-slate-950 border border-rose-500/40 shadow-[0_0_25px_rgba(244,63,94,0.12)] space-y-3">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+          <div className="flex items-center gap-3">
+            <div className="w-10 h-10 rounded-xl bg-rose-500/20 border border-rose-500/40 flex items-center justify-center text-rose-400 shrink-0">
+              <ShieldAlert className="w-5 h-5 animate-pulse" />
+            </div>
+            <div>
+              <div className="flex items-center gap-2">
+                <span className="font-bold text-white uppercase tracking-wider font-mono text-xs">
+                  AI SOC INCIDENT RESPONSE PLAYBOOK • MITRE T1110
+                </span>
+                <span className="px-2 py-0.5 rounded text-[10px] font-bold bg-rose-500/20 text-rose-300 border border-rose-500/40 font-mono">
+                  ACTIVE SOAR PIPELINE
+                </span>
+              </div>
+              <p className="text-[11px] text-slate-400 font-sans mt-0.5">
+                Suspicious Login → AI Analysis → Risk: 91/100 → Brute Force → MITRE T1110 → Explainable XAI → Auto-Quarantine → Incident Ticket → SOC Analyst
+              </p>
+            </div>
+          </div>
+
+          <button
+            onClick={onOpenMitrePlaybook}
+            className="px-4 py-2 rounded-xl bg-gradient-to-r from-rose-500 to-amber-500 hover:from-rose-400 hover:to-amber-400 text-slate-950 font-mono font-bold text-xs flex items-center gap-2 shadow-[0_0_15px_rgba(244,63,94,0.35)] transition-all shrink-0"
+          >
+            <ShieldAlert className="w-4 h-4" />
+            <span>Launch T1110 Playbook Simulation →</span>
+          </button>
+        </div>
+
+        {/* 9 Step Mini Nodes Flow */}
+        <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-9 gap-1.5 font-mono text-[10px] pt-1">
+          {[
+            { num: '1', name: 'Suspicious Login', color: 'text-rose-400', border: 'border-rose-500/40' },
+            { num: '2', name: 'AI Analyzes Event', color: 'text-cyan-400', border: 'border-cyan-500/40' },
+            { num: '3', name: 'Risk: 91/100', color: 'text-amber-400', border: 'border-amber-500/40' },
+            { num: '4', name: 'Brute Force', color: 'text-purple-400', border: 'border-purple-500/40' },
+            { num: '5', name: 'MITRE T1110', color: 'text-indigo-400', border: 'border-indigo-500/40' },
+            { num: '6', name: 'Why Detected (XAI)', color: 'text-teal-400', border: 'border-teal-500/40' },
+            { num: '7', name: 'Block Source IP', color: 'text-emerald-400', border: 'border-emerald-500/40' },
+            { num: '8', name: 'Create Incident', color: 'text-blue-400', border: 'border-blue-500/40' },
+            { num: '9', name: 'SOC Analyst', color: 'text-emerald-300', border: 'border-emerald-500/40' }
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              onClick={onOpenMitrePlaybook}
+              className={`p-1.5 rounded-lg bg-slate-950/80 border ${item.border} text-center cursor-pointer hover:bg-slate-900 transition-colors flex flex-col items-center justify-center gap-0.5`}
+            >
+              <span className={`font-bold ${item.color}`}>#{item.num}</span>
+              <span className="text-slate-300 truncate w-full text-[9px]">{item.name}</span>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -544,6 +608,19 @@ export default function DashboardView({
               SIMULATE THREAT VECTOR INJECTION:
             </span>
             <div className="grid grid-cols-2 gap-2">
+              <button
+                onClick={() => {
+                  onInjectAttack('BRUTE_FORCE');
+                  threatAudio.playAlert();
+                }}
+                className="p-2 rounded-xl bg-rose-950/60 hover:bg-rose-900/80 border border-rose-600/60 text-rose-300 text-[11px] font-mono font-semibold text-left transition-colors col-span-2 flex items-center justify-between shadow-[0_0_10px_rgba(244,63,94,0.2)]"
+              >
+                <span className="flex items-center gap-1.5">
+                  <ShieldAlert className="w-3.5 h-3.5 text-rose-400 animate-pulse" />
+                  <span>+ Inject Brute Force Burst (MITRE T1110)</span>
+                </span>
+                <span className="px-1.5 py-0.5 rounded bg-rose-500/20 text-[10px] text-rose-300 border border-rose-500/40">91/100 RISK</span>
+              </button>
               <button
                 onClick={() => {
                   onInjectAttack('SQLI');

